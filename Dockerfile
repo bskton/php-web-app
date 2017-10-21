@@ -21,6 +21,8 @@ ADD supervisor/supervisord.conf /etc/supervisord.conf
 ADD scripts/start.sh /start.sh
 RUN chmod 0755 /start.sh
 
+RUN docker-php-ext-install opcache
+
 EXPOSE 80
 
 CMD ["/start.sh"]

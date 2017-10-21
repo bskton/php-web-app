@@ -24,3 +24,5 @@ sudo docker run --rm -it -p 8000:80 php-web-app
 ```
 
 Открыть в браузере http://localhost:8000/, должен появиться вывод функции phpinfo().
+
+Образ на [Docker Hub](https://hub.docker.com/r/bskton/php-web-app/)
